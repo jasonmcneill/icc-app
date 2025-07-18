@@ -9,14 +9,14 @@ const HomePage = () => {
       title: "First Principles",
       description: "Core beliefs and foundational teachings",
       icon: firstPrinciplesIcon,
-      href: "https://firstprinciples.mobi/?utm_source=usd21-app"
+      href: "https://firstprinciples.mobi/?utm_source=usd21-app",
     },
     {
       title: "Invites",
-      description: "Share your faith by sending digital invites to church-related events",
+      description: "Share your faith by sending digital invites",
       icon: invitesIcon,
-      href: "https://invites.mobi/?utm_source=usd21-app"
-    }
+      href: "https://invites.mobi/?utm_source=usd21-app",
+    },
   ];
 
   return (
@@ -37,15 +37,15 @@ const HomePage = () => {
           <h2 className="text-2xl md:text-3xl font-semibold text-center mb-8 text-foreground">
             Quick Access
           </h2>
-          
+
           <div className="space-y-4">
             {menuItems.map((item, index) => (
-              <Card 
-                key={index} 
+              <Card
+                key={index}
                 className="p-6 hover:shadow-soft transition-all duration-300 hover:-translate-y-1 border-border/50"
               >
-                <Button 
-                  variant="ghost" 
+                <Button
+                  variant="ghost"
                   className="w-full h-auto p-0 flex items-start text-left justify-start hover:bg-transparent group"
                   onClick={() => {
                     window.open(item.href, "_blank", "noopener,noreferrer");
@@ -53,7 +53,11 @@ const HomePage = () => {
                 >
                   <div className="flex items-center w-full">
                     <div className="bg-primary/10 p-3 rounded-lg mr-4 group-hover:bg-primary/20 transition-colors">
-                      <img src={item.icon} alt={`${item.title} icon`} className="w-6 h-6" />
+                      <img
+                        src={item.icon}
+                        alt={`${item.title} icon`}
+                        className="w-6 h-6"
+                      />
                     </div>
                     <div className="flex-1">
                       <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
@@ -75,7 +79,7 @@ const HomePage = () => {
       <footer className="text-center py-8 text-muted-foreground border-t border-border/50">
         <p className="text-sm">
           © {new Date().getFullYear()}{" "}
-          <a 
+          <a
             href="https://usd21.org/?utm_source=usd21-app"
             target="_blank"
             rel="noopener noreferrer"
