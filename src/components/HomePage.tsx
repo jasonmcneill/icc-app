@@ -1,19 +1,20 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { BookOpen, Users } from "lucide-react";
+import firstPrinciplesIcon from "@/assets/first-principles-icon.png";
+import invitesIcon from "@/assets/invites-icon.png";
 
 const HomePage = () => {
   const menuItems = [
     {
       title: "First Principles",
       description: "Core beliefs and foundational teachings",
-      icon: BookOpen,
+      icon: firstPrinciplesIcon,
       href: "https://firstprinciples.mobi/?utm_source=usd21-app"
     },
     {
       title: "Invites",
       description: "Share your faith by sending digital invites to church-related events",
-      icon: Users,
+      icon: invitesIcon,
       href: "https://invites.mobi/?utm_source=usd21-app"
     }
   ];
@@ -52,7 +53,7 @@ const HomePage = () => {
                 >
                   <div className="flex items-center w-full">
                     <div className="bg-primary/10 p-3 rounded-lg mr-4 group-hover:bg-primary/20 transition-colors">
-                      <item.icon className="w-6 h-6 text-primary" />
+                      <img src={item.icon} alt={`${item.title} icon`} className="w-6 h-6" />
                     </div>
                     <div className="flex-1">
                       <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
