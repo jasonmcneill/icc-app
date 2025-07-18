@@ -73,7 +73,7 @@ const HomePage = () => {
       {/* Footer */}
       <footer className="text-center py-8 text-muted-foreground border-t border-border/50">
         <p className="text-sm">
-          © 2024{" "}
+          © {new Date().getFullYear()}{" "}
           <a 
             href="https://usd21.org/?utm_source=usd21-app"
             target="_blank"
