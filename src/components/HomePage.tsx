@@ -12,7 +12,7 @@ const HomePage = () => {
     },
     {
       title: "Invites",
-      description: "Connect and invite others to join our community",
+      description: "Share your faith by sending digital invites to church-related events",
       icon: Users,
       href: "https://invites.mobi/?utm_source=usd21-app"
     }
