@@ -8,13 +8,13 @@ const HomePage = () => {
       title: "First Principles",
       description: "Core beliefs and foundational teachings",
       icon: BookOpen,
-      href: "/first-principles"
+      href: "https://firstprinciples.mobi/?utm_source=usd21-app"
     },
     {
       title: "Invites",
       description: "Connect and invite others to join our community",
       icon: Users,
-      href: "/invites"
+      href: "https://invites.mobi/?utm_source=usd21-app"
     }
   ];
 
@@ -47,8 +47,7 @@ const HomePage = () => {
                   variant="ghost" 
                   className="w-full h-auto p-0 flex items-start text-left justify-start hover:bg-transparent group"
                   onClick={() => {
-                    // Navigation logic will go here
-                    console.log(`Navigate to ${item.href}`);
+                    window.open(item.href, "_blank", "noopener,noreferrer");
                   }}
                 >
                   <div className="flex items-center w-full">
