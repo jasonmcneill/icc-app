@@ -73,7 +73,16 @@ const HomePage = () => {
       {/* Footer */}
       <footer className="text-center py-8 text-muted-foreground border-t border-border/50">
         <p className="text-sm">
-          © 2024 International Christian Churches. All rights reserved.
+          © 2024{" "}
+          <a 
+            href="https://usd21.org/?utm_source=usd21-app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:no-underline transition-all"
+          >
+            International Christian Churches
+          </a>
+          . All rights reserved.
         </p>
       </footer>
     </div>
