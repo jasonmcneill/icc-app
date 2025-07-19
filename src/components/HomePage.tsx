@@ -52,11 +52,11 @@ const HomePage = () => {
                   }}
                 >
                   <div className="flex items-center w-full">
-                    <div className="bg-primary/10 p-3 rounded-lg mr-4 group-hover:bg-primary/20 transition-colors">
+                    <div className="bg-primary/10 rounded-lg mr-4 group-hover:bg-primary/20 transition-colors">
                       <img
                         src={item.icon}
                         alt={`${item.title} icon`}
-                        className="w-6 h-6"
+                        className="w-8 h-8 md:w-12 md:h-12"
                       />
                     </div>
                     <div className="flex-1">
