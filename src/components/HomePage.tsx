@@ -24,7 +24,7 @@ const HomePage = () => {
       {/* Header Section */}
       <div className="bg-gradient-primary text-primary-foreground">
         <div className="container mx-auto px-4 py-12 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">USD21</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">ICC</h1>
           <p className="text-lg md:text-xl opacity-90 max-w-2xl mx-auto">
             Welcome to the International Christian Churches community platform
           </p>
