@@ -11,10 +11,21 @@ img {
   max-width: 100%;
 }
 
+.master_container {
+  margin: auto;
+  max-width: 992px;
+}
+
 .flex-container {
   display: flex;
   align-items: center;
   height: 100vh;
   border: 1px solid black;
-  width: 100vw;
+  width: 100%;
+}
+
+@media (orientation: landscape) {
+  .master_container {
+    display: none;
+  }
 }

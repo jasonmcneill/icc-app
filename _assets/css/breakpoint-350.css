@@ -1,24 +1,4 @@
-@media (max-width: 576px) {
-  div.container-fluid {
-    position: relative;
-  }
-
-  footer {
-    bottom: 15px;
-    position: fixed;
-    z-index: -10;
-  }
-
-  footer img {
-    height: auto;
-    width: 220%;
-    max-width: none;
-    position: relative;
-    right: 42%;
-    transform: translateX(-20%);
-    display: block;
-  }
-
+@media (max-width: 576px) and (orientation: portrait) {
   .mastheadOrgName {
     position: absolute;
     left: 0;
@@ -33,48 +13,12 @@
   }
 
   .centered-div {
-    height: 250px;
     position: relative;
-    width: 100vw;
-  }
-
-  .appTitleFirst {
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: center;
     width: 100%;
-    height: 135px;
-    z-index: 20;
-  }
-
-  .appTitleFirst img {
-    width: auto;
-    height: 142px;
-  }
-
-  .appTitlePrinciples {
-    position: absolute;
-    top: 97px;
-    left: 0;
-    text-align: center;
-    width: 100%;
-    height: 110px;
-    z-index: 10;
-  }
-
-  .appTitlePrinciples img {
-    height: 100px;
-    width: auto;
   }
 
   .bibleStudySeries {
-    position: absolute;
-    top: 176px;
-    left: 0;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-    width: 100%;
-    height: 19px;
   }
 
   .bibleStudySeries h1 {
