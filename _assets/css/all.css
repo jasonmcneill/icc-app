@@ -23,9 +23,3 @@ img {
   border: 1px solid black;
   width: 100%;
 }
-
-@media (orientation: landscape) {
-  .master_container {
-    display: none;
-  }
-}

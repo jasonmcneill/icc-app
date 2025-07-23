@@ -6,7 +6,8 @@
     width: 100%;
   }
 
-  .mastheadOrgName h1 {
+  .mastheadOrgName h1,
+  .bibleStudySeries h1 {
     color: white;
     font-size: 0.8rem;
     margin: 0;
@@ -20,10 +21,33 @@
   .bibleStudySeries {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
   }
+}
 
+@media (max-height: 400px) and (orientation: landscape) {
+  .mastheadOrgName {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 100%;
+  }
+
+  .mastheadOrgName h1,
   .bibleStudySeries h1 {
     color: white;
     font-size: 0.8rem;
     margin: 0;
+  }
+
+  .centered-div {
+    position: relative;
+    width: 100%;
+  }
+
+  .cover img {
+    max-height: 190px;
+  }
+
+  .bibleStudySeries {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
   }
 }
